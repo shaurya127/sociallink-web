@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  .message-outer-container {
+    background: radial-gradient(
+      386.66% 118.4% at -18.4% 106.36%,
+      #0099ff 0%,
+      #a033ff 43.15%,
+      #ff5280 79.18%,
+      #ff7061 100%
+    );
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .message-container {
+    max-width: 400px;
+    height: 100vh;
+  }
+
+  .msg-label {
+    @apply font-bold text-xl px-12 mt-10 text-center;
+    background: radial-gradient(
+        386.66% 118.4% at -18.4% 106.36%,
+        #0099ff 0%,
+        #a033ff 43.15%,
+        #ff5280 79.18%,
+        #ff7061 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .msg-input {
+    @apply h-12 w-11/12 text-center rounded-lg font-semibold;
+    background: #e1e1e1;
+  }
+
+  .message-inner-container {
+    position: relative;
+  }
+
+  .avatar {
+    margin-top: -30px;
+    position: absolute;
+    top: 0;
+  }
+
+  .android-download {
+    width: 100%;
+  }
+
+  .ios-download {
+    width: 100%;
+  }
+
+  .android-download-link {
+    margin: 10px;
+  }
+
+  .ios-download-link {
+    margin: 10px;
+  }
+
+  .mockup-img {
+    /* animation: bounce 4s infinite;
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0.5);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+} */
+  }
+}
