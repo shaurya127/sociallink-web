@@ -43,7 +43,7 @@ const Message = () => {
 
   const send_alert =  () => {
     console.log(tokan)
-   fetch('http://localhost:8080/alert', {
+   fetch('https://sleepy-ridge-39579.herokuapp.com/alert', {
       method: 'post',
       headers: {
         Accept: 'application/json',
